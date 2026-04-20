@@ -5,6 +5,7 @@ type SectionHeadingProps = {
   title: string;
   description?: ReactNode;
   align?: "left" | "center";
+  eyebrowClassName?: string;
 };
 
 export function SectionHeading({
@@ -12,12 +13,13 @@ export function SectionHeading({
   title,
   description,
   align = "left",
+  eyebrowClassName = "text-clay",
 }: SectionHeadingProps) {
   const centered = align === "center";
 
   return (
     <div className={centered ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
-      <p className="eyebrow text-clay">{eyebrow}</p>
+      <p className={`eyebrow ${eyebrowClassName}`}>{eyebrow}</p>
       <h2 className="mt-4 font-serif text-[2.85rem] leading-[0.95] text-ink sm:mt-5 sm:text-6xl">
         {title}
       </h2>

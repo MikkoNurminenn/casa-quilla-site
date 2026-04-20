@@ -259,6 +259,7 @@ export default async function LocaleHomePage({
               eyebrow={content.home.localStory.eyebrow}
               title={content.home.localStory.title}
               description={content.home.localStory.intro}
+              eyebrowClassName="text-moss"
             />
           </Reveal>
           <div className="grid gap-8 sm:gap-10">

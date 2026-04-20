@@ -353,7 +353,7 @@ export const siteContent: Record<LocaleCode, LocaleSiteContent> = {
       note:
         "Concept launch site for a bilingual direct-booking hostel and massage experience.",
       legal:
-        "Replace final legal entity, address, and booking terms before going live.",
+        "© 2025 Casa Quilla. All rights reserved.",
     },
   },
   es: {
@@ -653,7 +653,7 @@ export const siteContent: Record<LocaleCode, LocaleSiteContent> = {
       note:
         "Sitio conceptual de lanzamiento para una experiencia bilingue de hostel y masajes con venta directa.",
       legal:
-        "Reemplazar entidad legal final, direccion y terminos de reserva antes de publicar.",
+        "© 2025 Casa Quilla. Todos los derechos reservados.",
     },
   },
 };

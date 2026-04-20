@@ -53,10 +53,6 @@ export default async function StayPage({
                 <p className="eyebrow text-gold">
                   {content.stay.hero.availabilityLabel}
                 </p>
-                <p className="mt-4 text-sm leading-7 text-cream/76">
-                  Cloudbeds handles live inventory, deposit logic, and OTA sync so
-                  this page can stay focused on conversion rather than custom PMS work.
-                </p>
                 <div className="mt-6">
                   <CtaLink
                     href={generalBookingUrl}

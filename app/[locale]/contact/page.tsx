@@ -65,6 +65,7 @@ export default async function ContactPage({
             <SectionHeading
               eyebrow={content.home.localStory.eyebrow}
               title={content.contact.arrivalTitle}
+              eyebrowClassName="text-moss"
             />
           </Reveal>
           <div className="grid gap-5">
