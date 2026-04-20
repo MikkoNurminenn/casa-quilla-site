@@ -34,7 +34,7 @@ export default async function StayPage({
   const generalBookingUrl = getCloudbedsBookingUrl(content.locale, "stay-page");
 
   return (
-    <main className="px-4 pb-10 pt-28 sm:px-8 sm:pt-36 lg:px-10">
+    <main className="px-4 pb-10 pt-40 sm:px-8 sm:pt-48 lg:px-10 lg:pt-52">
       <SchemaScript schema={buildLodgingSchema(content)} />
       <div className="mx-auto max-w-7xl">
         <Reveal>
