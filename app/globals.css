@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+:root {
+  --canvas: #efe8dc;
+  --canvas-soft: #f7f1e7;
+  --cream: #fcf7ef;
+  --ink: #19140f;
+  --ink-soft: #5d5449;
+  --clay: #a15c33;
+  --clay-deep: #7d4524;
+  --moss: #4a5b42;
+  --gold: #d7b57a;
+  --line: rgba(25, 20, 15, 0.1);
+  --shadow: rgba(25, 20, 15, 0.12);
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-canvas-soft: var(--canvas-soft);
+  --color-cream: var(--cream);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-clay: var(--clay);
+  --color-clay-deep: var(--clay-deep);
+  --color-moss: var(--moss);
+  --color-gold: var(--gold);
+  --color-line: var(--line);
+  --font-sans: var(--font-manrope);
+  --font-serif: var(--font-cormorant);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(215, 181, 122, 0.12), transparent 28%),
+    linear-gradient(180deg, var(--canvas-soft) 0%, var(--canvas) 100%);
+  color: var(--ink);
+  font-family: var(--font-manrope), sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(161, 92, 51, 0.18);
+}
+
+.site-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.site-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.2;
+  background-image:
+    linear-gradient(rgba(25, 20, 15, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(25, 20, 15, 0.02) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+
+.eyebrow {
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.section-divider {
+  border-top: 1px solid var(--line);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.shadow-soft {
+  box-shadow: 0 22px 70px -28px var(--shadow);
+}
+
+.glass-panel {
+  background: rgba(252, 247, 239, 0.62);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.ambient-mask {
+  mask-image: linear-gradient(180deg, black 72%, transparent 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
