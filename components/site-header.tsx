@@ -34,7 +34,7 @@ export function SiteHeader({ content }: SiteHeaderProps) {
             className="min-w-0 flex-1 pr-2 text-ink"
           >
             <span className="flex w-fit max-w-full flex-col">
-              <span className="block truncate font-serif text-[2.8rem] leading-[0.9] tracking-[0.035em] sm:text-4xl sm:tracking-[0.04em]">
+              <span className="block truncate font-serif text-[1.8rem] leading-[0.9] tracking-[0.035em] sm:text-[2.8rem] sm:tracking-[0.04em]">
                 {content.brand.name}
               </span>
               <span className="mt-1.5 block whitespace-nowrap pl-[0.16rem] text-[0.6rem] font-semibold uppercase leading-none tracking-[0.18em] text-ink-soft sm:mt-2 sm:pl-[0.2rem] sm:text-[0.72rem] sm:tracking-[0.24em]">
